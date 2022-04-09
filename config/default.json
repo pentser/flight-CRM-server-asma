@@ -1,0 +1,10 @@
+{
+  "privateKey": "AsmaaAbugama",
+  "ttl": 259200,
+  "pg": {
+    "host": "127.0.0.1",
+    "user": "postgres",
+    "password": "admin",
+    "database": "test_db"
+  }
+}

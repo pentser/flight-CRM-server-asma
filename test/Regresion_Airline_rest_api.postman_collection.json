@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "a189f67b-eae6-41f8-a20d-b2841917b1be",
+		"name": "Regresion_Airline_rest_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_airline_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "get_airline_by_user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"status ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"airline id\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.id).to.eql(\"1\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/airlines/api/get_airline_by_user?user=angryduck156",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"airlines",
+						"api",
+						"get_airline_by_user"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "angryduck156"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_airlines_join",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_by_user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"status ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"user id\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.id).to.eql(\"1\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/airlines/api/get_user_by_user?user=angryostrich988",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"airlines",
+						"api",
+						"get_user_by_user"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "angryostrich988"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_country_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

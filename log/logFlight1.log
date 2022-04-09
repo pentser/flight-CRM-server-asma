@@ -1,0 +1,24 @@
+{
+  level: 'error',
+  message: 'error connect to server:,MongoServerError: bad auth : Authentication failed.',
+  label: 'testing mode',
+  timestamp: '2022-03-21T13:12:18.851Z'
+}
+{
+  level: 'error',
+  message: 'error connect to server:,MongoParseError: URI contained empty userinfo section',
+  label: 'testing mode',
+  timestamp: '2022-03-21T13:14:24.401Z'
+}
+{
+  level: 'info',
+  message: 'connected to host on port: 3000',
+  label: 'testing mode',
+  timestamp: '2022-03-21T13:14:40.980Z'
+}
+{
+  level: 'info',
+  message: 'connected to host on port: 3000',
+  label: 'testing mode',
+  timestamp: '2022-03-21T13:38:22.380Z'
+}
